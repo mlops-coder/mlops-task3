@@ -27,7 +27,7 @@ while acc<=97.0:
     model.add(Dense(units=10, activation='softmax'))
 
     model.compile(optimizer=RMSprop(learning_rate=learningRate), loss='categorical_crossentropy', metrics=['accuracy'])
-    model.fit(X_train, y_train, epochs=3)
+    model.fit(X_train, y_train, epochs=4)
 
 
     df_history = pd.DataFrame(model.history.history)
